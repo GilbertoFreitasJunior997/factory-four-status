@@ -1,5 +1,5 @@
+import { Layout } from "./layout";
 import axios from "axios";
-import { useQueries } from "@tanstack/react-query";
 
 type Status = {
   success: boolean;
@@ -40,24 +40,12 @@ const queries = ENDPOINTS.map((endpoint) => ({
   queryFn: () => getSampleStatus(endpoint),
 }));
 
-export const App = () => {
-  const statuses = useQueries({
+/**
+const statuses = useQueries({
     queries,
   });
+ */
 
-  return (
-    <div className="w-screen h-screen grid grid-cols-5">
-      {statuses.map((status, index) => (
-        <div key={index} className="w-full h-40">
-          {status.isLoading
-            ? "LOADING"
-            : status.error
-            ? "QUERY ERROR"
-            : status.data?.success
-            ? "SUCCESS"
-            : "ERROR"}
-        </div>
-      ))}
-    </div>
-  );
+export const App = () => {
+  return <Layout />;
 };
