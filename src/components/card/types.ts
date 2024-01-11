@@ -1,6 +1,5 @@
-import { Status } from "../../api";
-import { UseQueryResult } from "@tanstack/react-query";
+import { Service } from "../../api/types";
 
 export type CardProps = {
-  data: UseQueryResult<Status, Error>;
+  service: Service;
 };

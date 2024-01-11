@@ -1,7 +1,4 @@
-export const API_URL = "https://api.factoryfour.com/";
-export const API_COMPLEMENT_URL = "/health/status";
-
-export const ENDPOINTS = [
+export const SERVICES = [
   "accounts",
   "assets",
   "customers",
@@ -20,4 +17,4 @@ export const ENDPOINTS = [
   "templates",
   "users",
   "workflows",
-];
+] as const;
