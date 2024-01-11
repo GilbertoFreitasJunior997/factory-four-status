@@ -3,7 +3,7 @@ import { Topbar } from "./topbar";
 
 export const Layout = () => {
   return (
-    <div className="w-screen h-screen overflow-hidden px-10">
+    <div className="w-screen h-screen overflow-x-hidden px-10 py-5">
       <Topbar />
       <CardList />
     </div>

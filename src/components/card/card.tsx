@@ -1,13 +1,31 @@
+import { Badge } from "../badge";
 import { CardProps } from "./types";
 import { FC } from "react";
+import { format } from "date-fns";
 import { useGetStatus } from "../../api/use-get-status";
 
 export const Card: FC<CardProps> = ({ service }) => {
-  const { data } = useGetStatus(service);
+  const { data, isError, isLoading } = useGetStatus(service);
+
+  const isSuccess = !isError && !!data?.success;
+  const hours = data?.time
+    ? format(new Date(data.time).toUTCString(), "H:mm:ss")
+    : "";
 
   return (
-    <div className="w-full bg-gray-50">
-      {service} <p> STATUS: {`${data?.success}`}</p>
+    <div className="w-full min-h-[10rem] bg-gray-50 border rounded-md px-6">
+      <div className="py-6">
+        <h2 className="text-xl font-semibold uppercase">{service}</h2>
+        <Badge isLoading={isLoading} isSuccess={!!isSuccess} />
+      </div>
+      <div
+        className={`py-3 transition-opacity ${
+          isLoading ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <p>{isError ? "OUTAGE" : data?.hostname}</p>
+        <p>{isError ? "Deprecated" : hours}</p>
+      </div>
     </div>
   );
 };

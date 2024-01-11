@@ -4,7 +4,7 @@ export type Status = {
   success: boolean;
   message: string;
   hostname: string;
-  time: Date;
+  time: number;
 };
 
 export type Service = (typeof SERVICES)[number];
