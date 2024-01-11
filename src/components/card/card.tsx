@@ -13,7 +13,7 @@ export const Card: FC<CardProps> = ({ service }) => {
     : "";
 
   return (
-    <div className="w-full min-h-[10rem] bg-gray-50 border rounded-md px-6">
+    <div className="w-full min-h-[10rem] bg-gray-50 border rounded-md px-6 shadow-sm">
       <div className="py-6">
         <h2 className="text-xl font-semibold uppercase">{service}</h2>
         <Badge isLoading={isLoading} isSuccess={!!isSuccess} />
