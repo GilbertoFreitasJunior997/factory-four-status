@@ -1,4 +1,4 @@
-# Job Search Project: FactoryFour API Status Dashboard
+# FactoryFour API Status Dashboard
 
 ## Overview
 
