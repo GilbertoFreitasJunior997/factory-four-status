@@ -38,6 +38,7 @@ export const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     updateRootTheme(newTheme);
+    localStorage.setItem(THEME_STORAGE_KEY, newTheme);
 
     setTheme(newTheme);
   };

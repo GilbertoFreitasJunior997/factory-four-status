@@ -1,6 +1,7 @@
-import { API_COMPLEMENT_URL, API_URL, REFRESH_DELAY } from "./config";
+import { API_COMPLEMENT_URL, API_URL } from "./config";
 import { useCallback, useEffect, useState } from "react";
 
+import { STATUS_REFRESH_DELAY } from "./status-refresh-delay";
 import { Status } from "./types";
 import axios from "axios";
 
@@ -26,7 +27,10 @@ export const useGetStatus = (service: string) => {
 
   useEffect(() => {
     handleGetStatus();
-    const intervalId = setInterval(handleGetStatus, REFRESH_DELAY * 1000);
+    const intervalId = setInterval(
+      handleGetStatus,
+      STATUS_REFRESH_DELAY * 1000
+    );
 
     return () => {
       clearInterval(intervalId);
