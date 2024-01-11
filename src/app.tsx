@@ -1,5 +1,8 @@
 import { Layout } from "./layout";
+import { ThemeProvider } from "./components/theme-provider";
 
-export const App = () => {
-  return <Layout />;
-};
+export const App = () => (
+  <ThemeProvider>
+    <Layout />
+  </ThemeProvider>
+);
