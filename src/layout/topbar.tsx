@@ -7,9 +7,12 @@ export const Topbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="w-full flex justify-between items-center text-2xl font-bold mb-5">
-      <div>Status Dashboard</div>
-      <div className="flex gap-4 items-center">
+    <header className="w-full flex justify-between items-center mb-5">
+      <div>
+        <h1 className="text-2xl font-bold">Factory Four API Dashboard </h1>
+        <span>Real-time API status monitoring</span>
+      </div>
+      <div className="flex gap-4 items-center text-2xl">
         <a
           href="https://gitlab.com/BetoFreitas/factory-four-status"
           target="_blank"
