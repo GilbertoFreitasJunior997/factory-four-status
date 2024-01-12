@@ -1,4 +1,4 @@
 export type BadgeProps = {
-  isLoading: boolean;
+  isLoading?: boolean;
   isSuccess: boolean;
 };

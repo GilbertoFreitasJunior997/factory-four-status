@@ -8,3 +8,15 @@ export type Status = {
 };
 
 export type Service = (typeof SERVICES)[number];
+
+export type StatusError = {
+  error: Error;
+  time: Date;
+};
+
+export type OldStatus = Status | StatusError;
+
+export type UseGetStatusParams = {
+  service: Service;
+  onUpdate(newStatus: OldStatus): void;
+};
