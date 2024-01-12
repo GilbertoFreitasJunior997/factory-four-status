@@ -28,7 +28,7 @@ export const ModalStatuses: FC<ModalStatusesProps> = ({
               </button>
             </Dialog.Close>
           </Dialog.Title>
-          <div className="overflow-y-auto h-[80vh] max-h-[40rem] w-[35rem] space-y-2">
+          <div className="overflow-y-auto h-[40vh] max-h-[40rem] w-[25rem] space-y-2">
             {statuses.reverse().map((status) => (
               <OldStatusLine
                 key={status.time.toLocaleString()}
