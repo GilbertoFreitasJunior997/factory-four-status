@@ -28,7 +28,7 @@ export const Card: FC<CardProps> = ({ service }) => {
     <>
       <div
         onClick={() => setShowingStatuses(true)}
-        className="w-full min-h-[10rem] transition-colors bg-gray-50 hover:bg-gray-100 dark:bg-zinc-950 dark:hover:bg-zinc-800 border dark:border-zinc-100/50 rounded-md px-6 shadow-sm group cursor-pointer"
+        className="w-full min-h-[12.375rem] transition-colors bg-gray-50 hover:bg-gray-100 dark:bg-zinc-950 dark:hover:bg-zinc-800 border dark:border-zinc-100/50 rounded-md px-6 shadow-sm group cursor-pointer"
       >
         <div className="py-6">
           <div className="w-full flex items-center justify-between">
