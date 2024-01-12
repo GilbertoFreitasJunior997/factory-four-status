@@ -4,6 +4,9 @@
 
 Hello and welcome to my FactoryFour API Status Dashboard project! 🚀 As part of a job interview challenge, I've built this dashboard using **React** and **TypeScript** to provide a detailed overview of the FactoryFour API status. Whether you're a fellow developer or someone reviewing my skills, this dashboard offers real-time insights into the health of the API.
 
+**Important**: To change the request interval, change src\api\status-refresh-delay.ts
+
+
 ## Key Features
 
 - **GitLab Pages Pipeline**: Implemented GitLab Pages Pipeline to automate the deployment process, ensuring that the latest version of the dashboard is readily available, for easy deployment and accessibility.
