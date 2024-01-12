@@ -1,4 +1,5 @@
 # FactoryFour API Status Dashboard
+- **Live URL**: https://factory-four-status-betofreitas-473096d941410828cd47dfedb2051b8.gitlab.io/
 
 ## Overview
 
