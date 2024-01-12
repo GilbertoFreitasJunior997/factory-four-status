@@ -5,6 +5,9 @@
 
 Hello and welcome to my FactoryFour API Status Dashboard project! 🚀 As part of a job interview challenge, I've built this dashboard using **React** and **TypeScript** to provide a detailed overview of the FactoryFour API status. Whether you're a fellow developer or someone reviewing my skills, this dashboard offers real-time insights into the health of the API.
 
+# --
+I opted for major usage of React core concepts, like useEffects and ContextAPI, instead of showing knowleadge of other tools, like NextJS or libs like ReactQuery or Zustand, because understanding the core concepts of React itself is more valuable than showing knowledge of libs that manipulate those concepts.
+
 **Important**: To change the request interval, change src\api\status-refresh-delay.ts
 
 
@@ -22,6 +25,7 @@ Hello and welcome to my FactoryFour API Status Dashboard project! 🚀 As part o
 
 - **Well-Structured Architecture**: Following a well-organized structure to promote modularization and separation of concerns, ensuring maintainability and extensibility. 🏗️
 
+
 ## Getting Started
 
 To explore my FactoryFour API Status Dashboard:
@@ -30,10 +34,10 @@ To explore my FactoryFour API Status Dashboard:
 2. Install dependencies using `pnpm install`.
 3. Run the application locally with `pnpm dev`. 🚦
 
-- If you don't have pnpm, install it using `npm install -g pnpm`, or follow instructions on their website (https://pnpm.io/installation#using-npm)
+- If you don't have pnpm, install it using the `npm install -g pnpm` command, or follow instructions on their website (https://pnpm.io/installation#using-npm)
 
 Feel free to explore the different features, themes, and functionalities.
 
-Thank you for considering my FactoryFour API Status Dashboard for this job interview project. I appreciate your time and feedback.
+Thank you for considering my FactoryFour API Status Dashboard for your job interview project. I appreciate your time and feedback.
 
 Happy coding! 🚀
