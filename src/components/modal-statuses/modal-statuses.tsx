@@ -20,8 +20,7 @@ export const ModalStatuses: FC<ModalStatusesProps> = ({
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
         <Dialog.Content className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-50 dark:bg-zinc-950 border dark:border-zinc-100/50 rounded-md px-6 shadow-md focus:outline-none z-10 text-gray-900 dark:text-gray-200">
           <Dialog.Title className="font-semibold text-xl py-5 flex items-center justify-between">
-            <h4>Previous Statuses for {service.toUpperCase()} API</h4>
-
+            Previous Statuses for {service.toUpperCase()} API
             <Dialog.Close asChild>
               <button className="rounded-full hover:bg-black/10 dark:hover:bg-white/10 p-1 flex items-center justify-center">
                 <MdClose />
