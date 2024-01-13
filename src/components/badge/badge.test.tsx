@@ -1,13 +1,9 @@
 import { BADGE_ERROR_TEXT, BADGE_SUCCESS_TEXT } from "./consts";
 
 import { Badge } from "./badge";
-import { BadgeProps } from "./types";
-import { render } from "@testing-library/react";
+import { baseCreateSut } from "../../test/base-create-sut";
 
-const createSut = (props: BadgeProps) => {
-  const sut = render(<Badge {...props} />);
-  return { sut };
-};
+const { createSut } = baseCreateSut(Badge);
 
 describe("Badge", () => {
   it("Should show success text when status isSuccess is true", () => {
