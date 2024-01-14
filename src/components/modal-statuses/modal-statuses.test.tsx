@@ -31,6 +31,6 @@ describe("ModalStatuses", () => {
   it("Should render with valid props", () => {
     const { sut } = createSut(PROPS);
 
-    expect(sut).toBeTruthy();
+    expect(sut.baseElement).toBeVisible();
   });
 });
