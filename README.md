@@ -6,7 +6,7 @@
 Hello and welcome to my FactoryFour API Status Dashboard project! 🚀 As part of a job interview challenge, I've built this dashboard using **React** and **TypeScript** to provide a detailed overview of the FactoryFour API status. Whether you're a fellow developer or someone reviewing my skills, this dashboard offers real-time insights into the health of the API.
 
 # --
-I opted for major usage of React core concepts, like useEffects and ContextAPI, instead of showing knowleadge of other tools, like NextJS or libs like ReactQuery or Zustand, because understanding the core concepts of React itself is more valuable than showing knowledge of libs that manipulate those concepts.
+I opted for a major usage of React core concepts, such as `useEffect` and `ContextAPI`, instead of showcasing knowledge of other tools like NextJS or libraries such as ReactQuery or Zustand. Understanding the core concepts of React itself is more valuable than demonstrating knowledge of libraries that work over those concepts.
 
 **Important**: To change the request interval, change src\api\status-refresh-delay.ts
 
@@ -14,6 +14,9 @@ I opted for major usage of React core concepts, like useEffects and ContextAPI, 
 ## Key Features
 
 - **GitLab Pages Pipeline**: Implemented GitLab Pages Pipeline to automate the deployment process, ensuring that the latest version of the dashboard is readily available, for easy deployment and accessibility.
+
+- **Unit Tests**: Created comprehensive unit tests using Vitest and the React Testing Library.
+
 
 - **TailwindCSS Styling**: Utilizing the power of **TailwindCSS** for a visually appealing and scalable design that adapts to different screen sizes. 🎨
 
